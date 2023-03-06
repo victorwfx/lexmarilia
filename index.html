@@ -184,13 +184,19 @@ git push origin main
     <title>Consulta Veicular - Secretaria da Fazenda do Estado de São Paulo</title>
   </head>
   <body>
-    <h1>Consulta de Veículos</h1>
-    <form action="https://www.ipva.fazenda.sp.gov.br/ipvanet/Consulta.aspx" method="get">
-      <label for="placa">Placa:</label>
-      <input type="text" id="placa" name="Placa" required><br><br>
-      <label for="renavam">Renavam:</label>
-      <input type="text" id="renavam" name="Renavam" required><br><br>
-      <input type="submit" value="Consultar">
-    </form>
-  </body>
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Consulta de Débitos Veiculares</title>
+</head>
+<body>
+	<h1>Consulta de Débitos Veiculares</h1>
+	<form action="consultar.php" method="post">
+		<label for="placa">Placa do Veículo:</label>
+		<input type="text" id="placa" name="placa" required><br><br>
+		<label for="renavam">Número do RENAVAM:</label>
+		<input type="text" id="renavam" name="renavam" required><br><br>
+		<input type="submit" value="Consultar">
+	</form>
+</body>
 </html>
