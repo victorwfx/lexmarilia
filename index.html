@@ -170,3 +170,26 @@ document.querySelector('input[type=reset]').addEventListener('click', () => {
 	
 </body>
 </html>
+</body>
+</html>
+git add .
+git commit -m "Primeiro commit"
+git push origin main
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consulta DETRAN SP</title>
+</head>
+<body>
+	<h1>Consulta de dados do veículo no DETRAN SP</h1>
+	<form method="GET" action="http://www.detran.sp.gov.br/wps/portal/portaldetran/cidadao/veiculos/servicos/consultaveiculo">
+		<label for="placa">Digite a placa do veículo:</label>
+		<input type="text" id="placa" name="numeroPlaca">
+		<br><br>
+		<label for="renavam">Digite o RENAVAM do veículo:</label>
+		<input type="text" id="renavam" name="numeroRenavam">
+		<br><br>
+		<input type="submit" value="Consultar">
+	</form>
+</body>
+</html>
