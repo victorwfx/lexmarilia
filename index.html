@@ -178,18 +178,19 @@ git push origin main
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Consulta DETRAN SP</title>
-</head>
-<body>
-	<h1>Consulta de dados do veículo no DETRAN SP</h1>
-	<form method="GET" action="http://www.detran.sp.gov.br/wps/portal/portaldetran/cidadao/veiculos/servicos/consultaveiculo">
-		<label for="placa">Digite a placa do veículo:</label>
-		<input type="text" id="placa" name="numeroPlaca">
-		<br><br>
-		<label for="renavam">Digite o RENAVAM do veículo:</label>
-		<input type="text" id="renavam" name="numeroRenavam">
-		<br><br>
-		<input type="submit" value="Consultar">
-	</form>
-</body>
+	<!DOCTYPE html>
+<html>
+  <head>
+    <title>Consulta Veicular - Secretaria da Fazenda do Estado de São Paulo</title>
+  </head>
+  <body>
+    <h1>Consulta de Veículos</h1>
+    <form action="https://www.ipva.fazenda.sp.gov.br/ipvanet/Consulta.aspx" method="get">
+      <label for="placa">Placa:</label>
+      <input type="text" id="placa" name="Placa" required><br><br>
+      <label for="renavam">Renavam:</label>
+      <input type="text" id="renavam" name="Renavam" required><br><br>
+      <input type="submit" value="Consultar">
+    </form>
+  </body>
 </html>
