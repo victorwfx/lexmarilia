@@ -1,147 +1,236 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>DESPACHANTE LEX - Serviços de despachante em Marilia-SP</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<title>Despachante Policial - Serviços de Trânsito</title>
+	<style>
+		body {
+			background-color: #ffffff;
+			color: #000000;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.header {
+			background-color: #000000;
+			color: #ffffff;
+			display: flex;
+			justify-content: space-between;
+			padding: 20px;
+		}
+		
+		.logo {
+			font-size: 24px;
+			font-weight: bold;
+		}
+		
+		.nav {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.nav-item {
+			margin-left: 20px;
+		}
+		
+		.nav-item a {
+			color: #ffffff;
+			text-decoration: none;
+		}
+		
+		.section {
+			margin: 50px 0;
+			padding: 0 20px;
+		}
+		
+		.section-title {
+			font-size: 32px;
+			font-weight: bold;
+			margin: 0 0 30px 0;
+		}
+		
+		.section-content {
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.section-content li {
+			margin-bottom: 10px;
+		}
+		
+		.btn {
+			background-color: #0000ff;
+			border: none;
+			border-radius: 4px;
+			color: #ffffff;
+			cursor: pointer;
+			font-size: 16px;
+			padding: 10px;
+		}
+		
+		.btn:hover {
+			background-color: #00008b;
+		}
+	</style>
 </head>
 <body>
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<a class="navbar-brand" href="#"><img src="despachante-lex-logo.png" alt="DESPACHANTE LEX"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarNav">
-		<ul class="navbar-nav">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Serviços</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Contato</a>
-			</li>
-		</ul>
-	</div>
-</nav>
-
-<!-- Banner -->
-<div class="banner">
-	<h1>DESPACHANTE LEX</h1>
-	<p>Serviços de Licenciamento, Transferências, Renovação de CNH’S, Recursos de multas entre outros serviços.</p>
-	<a href="https://web.whatsapp.com/send?phone=5514996862142" target="_blank"><i class="fab fa-whatsapp"></i> (14) 99686-2142</a>
-</div>
-
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-		<div class="col-md-6">
-			<h2>Sobre Nós</h2>
-			<p>Somos uma empresa de despachante que oferece serviços de alta qualidade em Marilia-SP. Nossa equipe é composta por profissionais altamente capacitados e experientes, prontos para atender às suas necessidades de forma rápida e eficiente.</p>
-		</div>
-		<div class="col-md-6">
-			<h2>Nossos Serviços</h2>
+	<header class="header">
+		<div class="logo">Despachante Policial</div>
+		<nav class="nav">
+			<li class="nav-item"><a href="#">Início</a></li>
+			<li class="nav-item"><a href="#servicos">Serviços</a></li>
+			<li class="nav-item"><a href="#">Contato</a></li>
+		</nav>
+	</header>
+	
+	<section class="section">
+		<h2 class="section-title">Licenciamento de Veículos</h2>
+		<div class="section-content">
+			<p>Nós oferecemos serviços de licenciamento de veículos para ajudar você a manter seu carro em dia com as leis de trânsito. Nosso processo de licenciamento é rápido e fácil, e garantimos que seu carro esteja sempre em conformidade com as normas estabelecidas pelo Detran.</p>
 			<ul>
-				<li>Licenciamento</li>
-				<li>Transferências</li>
-				<li>Renovação de CNH's</li>
-				<li>Recursos de multas</li>
-				<li>Entre outros serviços</li>
+				<li>Renovação de licenciamento</li>
+				<li>Segunda via do licenciamento</li>
+				<li>Transferência de propriedade</li>
+				<li>Alteração de características</li>
 			</ul>
 		</div>
-	</div>
-</div>
-
-<!-- Footer -->
-<footer class="footer">
-	<div class="container">
+	</section>
 	
-		<div class="row">
-			<div class="col-md-6">
-				<h2>Entre em Contato</h2>
-				<p>Av Carlos Gomes 643 Centro CEP:17500-030 Marilia-SP</p>
-				<a href="https://web.whatsapp.com/send?phone=5514996862142" target="_blank"><i class="fab fa-whatsapp"></i> (14) 99686-2142</a>
-				<p>Chave PIX: lexdespachante@hotmail.com</p>
-			</div>
-			<div class="col-md-6">
-				<h2>Siga-nos</h2>
-				<ul class="social-media">
-					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
-</body>
-</html>
-<!-- CSS -->
-<style>
-	.banner {
-		background-image: url('despachante-lex-banner.jpg');
-		background-size: cover;
-		background-position: center;
-		text-align: center;
-		padding: 100px 0;
-		color: #fff;
-	}
-	.banner h1 {
-		font-size: 60px;
-		margin-bottom: 20px;
-	}
-	.banner p {
-		font-size: 25px;
-		margin-bottom: 50px;
-	}
-	.banner a {
-		display: block;
-		font-size: 30px;
-		color: #fff;
-		margin-bottom: 20px;
-	}
-	.banner a:hover {
-		color: #f0f0f0;
-	}
-	.social-media li {
-		display: inline-block;
-		margin-right: 10px;
-	}
-	.social-media a {
-		display: block;
-		font-size: 20px;
-		color: #333;
-		padding: 10px;
-	}
-	.social-media a:hover {
-		background-color: #333;
-		color: #fff;
-	}
-	.footer {
-		background-color: #f8f8f8;
-		padding: 50px 0;
-		text-align: center;
-	}
-	.footer p {
-		font-size: 18px;
-		margin-bottom: 20px;
-	}
-	.footer a {
-		color: #333;
-		font-size: 20px;
-		display: block;
-		margin-bottom: 10px;
-	}
-	.footer a:hover {
-		color: #555;
-	}
-</style>
+	<section class="section">
+		<h2 class="section-title">Transferência de Veículos</h2>
+		<div class="section-content">
+			<p>Fazemos a transferência de propriedade
+				<!DOCTYPE html>
+				<html lang="pt-BR">
+				<head>
+					<meta charset="UTF-8">
+					<title>Despachante Policial - Serviços de Trânsito</title>
+					<style>
+						body {
+							background-color: #ffffff;
+							color: #000000;
+							font-family: Arial, sans-serif;
+							font-size: 16px;
+							margin: 0;
+							padding: 0;
+						}
+						
+						.header {
+							background-color: #000000;
+							color: #ffffff;
+							display: flex;
+							justify-content: space-between;
+							padding: 20px;
+						}
+						
+						.logo {
+							font-size: 24px;
+							font-weight: bold;
+						}
+						
+						.nav {
+							display: flex;
+							list-style: none;
+							margin: 0;
+							padding: 0;
+						}
+						
+						.nav-item {
+							margin-left: 20px;
+						}
+						
+						.nav-item a {
+							color: #ffffff;
+							text-decoration: none;
+						}
+						
+						.section {
+							margin: 50px 0;
+							padding: 0 20px;
+						}
+						
+						.section-title {
+							font-size: 32px;
+							font-weight: bold;
+							margin: 0 0 30px 0;
+						}
+						
+						.section-content {
+							line-height: 1.5;
+							margin: 0;
+							padding: 0;
+						}
+						
+						.section-content li {
+							margin-bottom: 10px;
+						}
+						
+						.btn {
+							background-color: #0000ff;
+							border: none;
+							border-radius: 4px;
+							color: #ffffff;
+							cursor: pointer;
+							font-size: 16px;
+							padding: 10px;
+						}
+						
+						.btn:hover {
+							background-color: #00008b;
+						}
+					</style>
+				</head>
+				<body>
+					<header class="header">
+						<div class="logo">Despachante Policial</div>
+						<nav class="nav">
+							<li class="nav-item"><a href="#">Início</a></li>
+							<li class="nav-item"><a href="#servicos">Serviços</a></li>
+							<li class="nav-item"><a href="#">Contato</a></li>
+						</nav>
+					</header>
+					
+					<section class="section">
+						<h2 class="section-title">Licenciamento de Veículos</h2>
+						<div class="section-content">
+							<p>Nós oferecemos serviços de licenciamento de veículos para ajudar você a manter seu carro em dia com as leis de trânsito. Nosso processo de licenciamento é rápido e fácil, e garantimos que seu carro esteja sempre em conformidade com as normas estabelecidas pelo Detran.</p>
+							<ul>
+								<li>Renovação de licenciamento</li>
+								<li>Segunda via do licenciamento</li>
+								<li>Transferência de propriedade</li>
+								<li>Alteração de características</li>
+							</ul>
+						</div>
+					</section>
+					
+					<section class="section" id="servicos">
+						<h2 class="section-title">Serviços de Trânsito</h2>
+						<div class="section-content">
+							<p>Nós oferecemos uma variedade de serviços de trânsito para ajudar você a lidar com as complexidades do sistema de trânsito. Com nossa equipe experiente e comprometida, garantimos que você receba os serviços que precisa para manter sua vida no trânsito em ordem.</p>
+							<ul>
+							<li>Licenciamento de veículos</li>
+							<li>Transferência de veículos</li>
+							<li>Renovação de CNH's</li>
+							<li>Regularização de documentação</li>
+							<li>Consultoria em processos administrativos</li>
+							</ul>
+							</div>
+							<div class="section-content">
+							<p>Entre em contato conosco para obter mais informações sobre nossos serviços de trânsito ou para agendar uma consulta.</p>
+							<button class="btn">Entre em contato</button>
+							</div>
+							</section>
+							<footer class="footer">
+								<div class="footer-content">
+									<p>Despachante Policial - Serviços de Trânsito</p>
+									<p>Rua das Acácias, 123 - Centro, São Paulo/SP</p>
+									<p>(11) 1234-5678</p>
+								</div>
+							</footer>
+							
+				
